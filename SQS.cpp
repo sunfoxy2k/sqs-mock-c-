@@ -1,8 +1,8 @@
 #include "SQS.h"
 
-SQS::SQS() {
-    // Constructor implementation (if needed)
-}
+// SQS::SQS() {
+//     // Constructor implementation (if needed)
+// }
 
 void SQS::sendMessage(const std::string& message) {
     std::lock_guard<std::mutex> lock(queueMutex);
